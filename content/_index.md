@@ -14,7 +14,20 @@ sections:
   - block: markdown
     content:
       title: "🙋 소개 (About)"
-      text: "매일 마트로 들어오는 모든 물건의 시작과 끝을 책임지는 창고 매니저 이관용입니다. 정확한 분류와 철저한 재고 관리를 통해 매장의 완벽한 물류 흐름을 만드는 것을 제 최고의 보람으로 삼고 있습니다. 화려하게 드러나지는 않지만, 보이지 않는 곳에서의 꼼꼼함과 책임감이 마트의 하루를 움직인다고 믿습니다. 묵묵히 제 자리를 지키며 신뢰를 쌓아가는 보통사람의 성실한 기록을 이곳에 담아갑니다."
+      text: |
+        <div class="flex flex-col md:flex-row items-center gap-8 max-w-4xl mx-auto my-6 text-left">
+          <div class="w-48 h-48 md:w-64 md:h-64 flex-shrink-0 rounded-full overflow-hidden border-4 shadow-lg transition duration-300 hover:scale-105" style="border-color: var(--color-primary);">
+            <img src="/profile.png" alt="이관용 프로필" class="w-full h-full object-cover">
+          </div>
+          <div class="flex-grow space-y-4">
+            <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
+              매일 마트로 들어오는 모든 물건의 시작과 끝을 책임지는 창고 매니저 이관용입니다. 정확한 분류와 철저한 재고 관리를 통해 매장의 완벽한 물류 흐름을 만드는 것을 제 최고의 보람으로 삼고 있습니다.
+            </p>
+            <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
+              화려하게 드러나지는 않지만, 보이지 않는 곳에서의 꼼꼼함과 책임감이 마트의 하루를 움직인다고 믿습니다. 묵묵히 제 자리를 지키며 신뢰를 쌓아가는 보통사람의 성실한 기록을 이곳에 담아갑니다.
+            </p>
+          </div>
+        </div>
     design:
       css_id: about
       spacing:
