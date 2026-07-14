@@ -1,0 +1,20 @@
+schema: hugoblox/author/v1
+slug: me
+is_owner: true
+name:
+  display: 이관용
+role: '마트 창고 매니저'
+bio: '보이지 않는 곳에서 완벽한 흐름을 책임집니다.'
+
+affiliations:
+  - name: ''
+    url: ''
+
+links:
+  - icon: at-symbol
+    url: mailto:kwlee.logistics@gmail.com
+    label: Email
+  - icon: brands/github
+    url: https://github.com/
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/
