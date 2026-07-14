@@ -1,0 +1,16 @@
+main:
+  - name: 홈
+    url: '#hero'
+    weight: 10
+  - name: 소개
+    url: '#about'
+    weight: 20
+  - name: 기록
+    url: '#blog'
+    weight: 30
+  - name: 방명록
+    url: '#guestbook'
+    weight: 40
+  - name: 연락처
+    url: '#contact'
+    weight: 50
