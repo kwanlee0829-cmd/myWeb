@@ -12,10 +12,35 @@
   --color-primary-dark: #0F1E2C;
   --color-secondary: #1F3A52;
   --color-bg-beige: #F7F4EF;
+  --color-bg-white: #FFFFFF;
   --color-bg-card: #FFFFFF;
   --color-text-dark: #2D3748;
   --color-text-navy: #1A2E40;
   --color-border: #E2E8F0;
+  --color-nav-bg: rgba(247, 244, 239, 0.8);
+  --color-nav-border: rgba(26, 46, 64, 0.08);
+  --color-prose-text: #4A5568;
+  --color-about-border: rgba(26, 46, 64, 0.05);
+  --color-footer-bg: #FFFFFF;
+  --color-footer-border: rgba(26, 46, 64, 0.08);
+}
+
+.dark, [data-theme="dark"] {
+  --color-primary: #90CDF4;
+  --color-primary-dark: #63B3ED;
+  --color-secondary: #A0AEC0;
+  --color-bg-beige: #121212;
+  --color-bg-white: #1A202C;
+  --color-bg-card: #1A202C;
+  --color-text-dark: #E2E8F0;
+  --color-text-navy: #90CDF4;
+  --color-border: #2D3748;
+  --color-nav-bg: rgba(18, 18, 18, 0.85);
+  --color-nav-border: rgba(226, 232, 240, 0.1);
+  --color-prose-text: #CBD5E0;
+  --color-about-border: rgba(226, 232, 240, 0.05);
+  --color-footer-bg: #121212;
+  --color-footer-border: rgba(226, 232, 240, 0.1);
 }
 
 body {
@@ -27,10 +52,10 @@ body {
 
 /* 네비게이션 바 (글래스모피즘 & 미니멀) */
 header, nav, .navbar {
-  background-color: rgba(247, 244, 239, 0.8) !important;
+  background-color: var(--color-nav-bg) !important;
   backdrop-filter: blur(12px) !important;
   -webkit-backdrop-filter: blur(12px) !important;
-  border-bottom: 1px solid rgba(26, 46, 64, 0.08) !important;
+  border-bottom: 1px solid var(--color-nav-border) !important;
 }
 
 .nav-link, nav a {
@@ -78,16 +103,16 @@ h1, h2, h3, h4, h5, h6 {
 
 /* 소개 섹션 */
 #about {
-  background-color: #FFFFFF !important;
-  border-top: 1px solid rgba(26, 46, 64, 0.05);
-  border-bottom: 1px solid rgba(26, 46, 64, 0.05);
+  background-color: var(--color-bg-white) !important;
+  border-top: 1px solid var(--color-about-border) !important;
+  border-bottom: 1px solid var(--color-about-border) !important;
 }
 
 #about .prose {
   max-width: 48rem !important;
   font-size: 1.125rem !important;
   line-height: 1.8 !important;
-  color: #4A5568 !important;
+  color: var(--color-prose-text) !important;
   word-break: keep-all;
 }
 
@@ -104,7 +129,7 @@ h1, h2, h3, h4, h5, h6 {
 /* 블로그 카드 커스텀 디자인 */
 article, .card, [class*="card"] {
   background-color: var(--color-bg-card) !important;
-  border: 1px solid rgba(26, 46, 64, 0.05) !important;
+  border: 1px solid var(--color-border) !important;
   border-radius: 12px !important;
   padding: 1.5rem !important;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -1px rgba(0, 0, 0, 0.01) !important;
@@ -114,7 +139,7 @@ article, .card, [class*="card"] {
 article:hover, .card:hover, [class*="card"]:hover {
   transform: translateY(-6px) !important;
   box-shadow: 0 12px 20px -3px rgba(26, 46, 64, 0.08), 0 4px 12px -2px rgba(26, 46, 64, 0.03) !important;
-  border-color: rgba(26, 46, 64, 0.15) !important;
+  border-color: var(--color-primary) !important;
 }
 
 /* 방명록 및 연락처 버튼 네이비 포인트 */
@@ -139,11 +164,11 @@ input:focus, textarea:focus {
 
 /* 푸터 디자인 */
 footer {
-  background-color: #FFFFFF !important;
-  border-top: 1px solid rgba(26, 46, 64, 0.08) !important;
+  background-color: var(--color-footer-bg) !important;
+  border-top: 1px solid var(--color-footer-border) !important;
   padding-top: 2.5rem !important;
   padding-bottom: 2.5rem !important;
-  color: #718096 !important;
+  color: var(--color-secondary) !important;
 }
 
 /* 애니메이션 정의 */
