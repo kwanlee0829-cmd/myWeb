@@ -16,8 +16,8 @@ sections:
       title: "🙋 소개 (About)"
       text: |
         <div class="flex flex-col md:flex-row items-center gap-8 max-w-4xl mx-auto my-6 text-left">
-          <div class="w-48 h-48 md:w-64 md:h-64 flex-shrink-0 rounded-full overflow-hidden border-4 shadow-lg transition duration-300 hover:scale-105" style="border-color: var(--color-primary); background-color: var(--color-bg-beige);">
-            <img src="/profile.png" alt="이관용 프로필" class="w-full h-full object-cover">
+          <div class="profile-avatar w-48 h-48 md:w-64 md:h-64 flex-shrink-0 rounded-full overflow-hidden border-4 shadow-lg transition duration-300 hover:scale-105" style="border-color: var(--color-primary);">
+            <img src="/profile.png" alt="이관용 프로필" class="profile-avatar-img">
           </div>
           <div class="flex-grow space-y-4">
             <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
